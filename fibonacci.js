@@ -5,8 +5,8 @@ export function fibonacci(n) { // n is the nth number in the Fibonacci sequence
     }
     catch(error){
           console.error(error)
+        if (n<1 || n>1476) return -1; 
     }
-    if (n<1 || n>1476) return 0; 
     let previous = 0; // first number in the fibonacci sequence
     let current = 1; // second  number in the fibonacci sequence
 
@@ -16,7 +16,7 @@ export function fibonacci(n) { // n is the nth number in the Fibonacci sequence
         current = next;
     }
     return current;
-}
+    }
 
 // console.log(fibonacci(1477)); // checking the output of the function
 
