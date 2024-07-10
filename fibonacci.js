@@ -6,11 +6,11 @@ export function fibonacci(n) { // n is the nth number in the Fibonacci sequence
     catch(error){
           console.error(error)
     }
-      if (n<1 || n>1476) return 0; 
-    let previous = 1; // second number in the fibonacci sequence
-    let current = 1; // third number in the fibonacci sequence
+    if (n<1 || n>1476) return 0; 
+    let previous = 0; // first number in the fibonacci sequence
+    let current = 1; // second  number in the fibonacci sequence
 
-    for (let i = 2; i < n; i++){
+    for (let i = 1; i < n; i++){
         const next = previous + current;
         previous = current;
         current = next;
@@ -18,6 +18,6 @@ export function fibonacci(n) { // n is the nth number in the Fibonacci sequence
     return current;
 }
 
-// console.log(fibonacci(45)); // checking the output of the function
+// console.log(fibonacci(1477)); // checking the output of the function
 
 // by Arnold Weasly and Valentine Kiguli
