@@ -1,6 +1,6 @@
 import { assert } from 'chai';
 import { fibonacci } from '../fibonacci.js';
-import { describe, it } from 'mocha';
+// import { describe, it } from 'mocha';
 
 describe('Fibonacci sequencer', function(){
     it('Fibonacci sequence debunked?', function(){
